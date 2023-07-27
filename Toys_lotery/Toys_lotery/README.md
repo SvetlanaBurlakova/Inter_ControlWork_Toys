@@ -1,18 +1,9 @@
-## Getting Started
+Программа написана, как консольное приложение и содержит 3 класса:
+* Toy - игрушка (id, название, количество игрушек, вес)
+* Shop - магазин (лист игрушек и очередь на выдачу игрушек)
+* Lottery - лотерея (название, игрушки в лотереи)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Выигрыш игрушки в лотерее расчитывается с учетом веса, как доля выпадения (вероятность) от общего числа весов.
+*например, машинка - 2, кукла - 3, поезд - 5. Сумма весов - 10. Рандомно выбирается целое число от 1 до 10, если выпадает
+число в диапазоне (1,2) - выигрывает машинка, если число в диапазоне (3, 5) - то кукла, если в (6,10) - поезд.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
